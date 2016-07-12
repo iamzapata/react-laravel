@@ -14,6 +14,7 @@
             <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
             
             <script src="{{asset("vendor/jquery/jquery.js")}}"></script>
+            <script src="{{asset("vendor/remarkable/remarkable.js")}}"></script>
             <script src="{{asset("vendor/react/react.js")}}"></script>
             <script src="{{asset("vendor/react/react-dom.js")}}"></script>
             <script src="{{asset("vendor/babel/browser.js")}}"></script>

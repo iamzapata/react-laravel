@@ -47,6 +47,7 @@ var react      = 'public/vendor/react/';
 var babel      = 'public/vendor/babel/';
 var jquery     = 'public/vendor/jquery/';
 var backbone   = 'public/vendor/backbone/';
+var remarkable = 'public/vendor/remarkable/';
 var underscore = 'public/vendor/underscore/';
 
 
@@ -59,6 +60,7 @@ elixir(function(mix) {
    	   .copy(bower + 'babel/browser.js', babel)
    	   .copy(bower + 'underscore/underscore.js', underscore)
    	   .copy(bower + 'backbone/backbone.js', backbone)
+       .copy(bower + 'remarkable/dist/remarkable.js', remarkable)
    	   .copy(bower + 'jquery/dist/jquery.js', jquery);
 
    	       // dashboard js source.

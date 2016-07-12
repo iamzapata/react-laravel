@@ -7,8 +7,20 @@ use Illuminate\Http\Request;
 use ReactLaravel\Http\Requests;
 use ReactLaravel\Http\Controllers\Controller;
 
+use ReactLaravel\Repositories\Comments\CommentsEloquentRepository;
+
 class CommentsController extends Controller
 {
+    /**    
+     * @var CommentsEloquentRepository
+     */
+    private $repository;
+
+    public function __construct(CommentsEloquentRepository $repository)
+    {
+        $this->repository = $repository;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -16,7 +28,7 @@ class CommentsController extends Controller
      */
     public function index()
     {
-        //
+        return $this->repository->getAll();
     }
 
     /**

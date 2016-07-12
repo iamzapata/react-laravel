@@ -156,6 +156,10 @@ return [
         ReactLaravel\Providers\EventServiceProvider::class,
         ReactLaravel\Providers\RouteServiceProvider::class,
         ReactLaravel\Providers\CommentRoutesServiceProvider::class,
+        /**
+         * Application Repository Service Providers...
+         */
+        ReactLaravel\Providers\Repositories\CommentsRepositoryInterfaceServiceProvider::class,
 
     ],
 
