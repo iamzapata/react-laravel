@@ -18,6 +18,8 @@
             <script src="{{asset("vendor/react/react-dom.js")}}"></script>
             <script src="{{asset("vendor/babel/browser.js")}}"></script>
 
+            <link rel="stylesheet" href="{{asset("assets/css/app.css")}}">
+
         </head>
         <body>
             <!--[if lt IE 7]>

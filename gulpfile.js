@@ -52,7 +52,7 @@ var underscore = 'public/vendor/underscore/';
 
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.sass('app.scss', css);
 
     mix.copy(bower + 'react/react.js', react)
    	   .copy(bower + 'react/react-dom.js', react)   	 
