@@ -23,7 +23,28 @@ class CommentsEloquentRepository implements CommentsRepositoryInterface
 		$this->comment = $comment;
 	}
 
-	
+	public function create(Array $data)
+	{
+		$this->comment = $this->comment->newInstance()->create($data);
+
+		return $this->comment;
+	}
+
+	public function read($id)
+	{
+
+	}
+
+	public function update($id, Array $array)
+	{
+
+	}
+
+	public function delete($id)
+	{
+
+	}
+
 	public function getAll()
 	{
 		return $this->comment->all();
