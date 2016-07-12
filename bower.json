@@ -1,0 +1,22 @@
+{
+  "name": "react-laravel",
+  "description": "React tutorial from oficial docs",
+  "main": "",
+  "authors": [
+    "andfelzapata <andreszapatacano@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/andfelzapata/react-laravel",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/assets/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.2.1",
+    "babel": "*"
+  }
+}
