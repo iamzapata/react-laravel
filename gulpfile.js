@@ -21,6 +21,19 @@ var bower = 'resources/assets/bower/';
  * Assets Root
  */
 var root = 'resources/assets/';
+
+/**
+ * App Source Files
+ */
+var source = '/src/';
+var models =  source  + 'models/';
+var components = source  + 'components/';
+
+/*
+ * Utilities Directory
+ */
+var utils = root  + 'js/utils/';
+
 /*
  * Assets Output
  */
@@ -30,8 +43,11 @@ var js  = 'public/assets/js/';
 /*
  *  Vendor output
  */
-var react = 'public/vendor/react/';
-var babel = 'public/vendor/babel/';
+var react      = 'public/vendor/react/';
+var babel      = 'public/vendor/babel/';
+var jquery     = 'public/vendor/jquery/';
+var backbone   = 'public/vendor/backbone/';
+var underscore = 'public/vendor/underscore/';
 
 
 
@@ -40,6 +56,18 @@ elixir(function(mix) {
 
     mix.copy(bower + 'react/react.js', react)
    	   .copy(bower + 'react/react-dom.js', react)   	 
-   	   .copy(bower + 'babel/browser.js', babel);
+   	   .copy(bower + 'babel/browser.js', babel)
+   	   .copy(bower + 'underscore/underscore.js', underscore)
+   	   .copy(bower + 'backbone/backbone.js', backbone)
+   	   .copy(bower + 'jquery/dist/jquery.js', jquery);
+
+   	       // dashboard js source.
+    mix.scripts([
+        utils+'utils.js',     
+        models,
+        components,      
+        source+'app.js'] , js+'app.js');
+
+
 
 });

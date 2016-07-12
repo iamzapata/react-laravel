@@ -13,6 +13,7 @@
     
             <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
             
+            <script src="{{asset("vendor/jquery/jquery.js")}}"></script>
             <script src="{{asset("vendor/react/react.js")}}"></script>
             <script src="{{asset("vendor/react/react-dom.js")}}"></script>
             <script src="{{asset("vendor/babel/browser.js")}}"></script>
@@ -22,7 +23,8 @@
             <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-    
+            <div id="content"></div>
+            <script type="text/babel" src="{{asset("assets/js/app.js")}}"></script>
             
         </body>
     </html>

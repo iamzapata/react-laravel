@@ -155,6 +155,7 @@ return [
         ReactLaravel\Providers\AuthServiceProvider::class,
         ReactLaravel\Providers\EventServiceProvider::class,
         ReactLaravel\Providers\RouteServiceProvider::class,
+        ReactLaravel\Providers\CommentRoutesServiceProvider::class,
 
     ],
 
